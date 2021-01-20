@@ -1,0 +1,29 @@
+Converting all string in an array to title caps using anonymous function and IIFE
+
+1. Using Anonymous fucntion.
+
+let uppercase = function()
+{
+    a = ['yellow' ,'red', 'green' ,'blue']
+    //console.log(a)
+ b = a.map(a=> a.toUpperCase())
+ console.log(b)
+}
+uppercase()
+--------------------------------------------
+--------------------------------------------
+
+2. Using IIFE
+
+(
+    function()
+{
+    a = ['mango','orange','banana','apple']
+    //console.log(a)
+ b = a.map(a=> a.toUpperCase())
+ console.log(b)
+}
+)()
+
+---------------------------------------------
+---------------------------------------------
