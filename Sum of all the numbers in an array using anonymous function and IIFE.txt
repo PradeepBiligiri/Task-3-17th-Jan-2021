@@ -1,0 +1,34 @@
+Sum of all the numbers in an array using anonymous function and IIFE
+
+1. Using Anonymous fucntion.
+
+let sum = function ()
+{
+    let a = [1,2,3,4,5,6,7,8,9]
+    let b = 0;
+    for (i=0;i<a.length;i++)
+    {
+        b= b+ i;
+    }
+    console.log(b);
+}
+
+sum()
+--------------------------------------------
+--------------------------------------------
+
+2. Using IIFE
+
+(function ()
+{
+    let a = [1,2,3,4,5,6,7,8,9,10]
+    let b = 0;
+    for (i=0;i<a.length;i++)
+    {
+        b= b+ i;
+    }
+    console.log(b);
+})()
+
+---------------------------------------------
+---------------------------------------------
