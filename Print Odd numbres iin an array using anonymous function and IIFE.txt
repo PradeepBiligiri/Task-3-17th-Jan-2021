@@ -1,0 +1,34 @@
+Print Odd numbres iin an array using anonymous function and IIFE
+
+1. Using Anonymous fucntion.
+
+let oddNumbers = function (l, r) {
+    let arr = [];
+    for (i=l;i<r;i++)
+    {
+        arr.push(i)
+        a= arr.filter(i => i%2)
+    }
+    console.log(a)
+}
+x = oddNumbers(10,30)
+--------------------------------------------
+--------------------------------------------
+
+2. Using IIFE
+
+(
+    function (l, r)
+    {
+    let arr = [];
+    for (i=l;i<r;i++)
+    {
+        arr.push(i)
+        a= arr.filter(i => i%2)
+    }
+    console.log(a)
+}
+)(10,20)
+
+---------------------------------------------
+---------------------------------------------
