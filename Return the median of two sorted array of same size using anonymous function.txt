@@ -1,0 +1,36 @@
+Return the median of two sorted array of same size using anonymous function
+
+Using Anonymous fucntion.
+let x = function (arr1 =[],arr2 =[]) 
+
+{ 
+     
+    let length1 = arr1.length; 
+    let length2 = arr2.length; 
+    let totallength = length1+length2; 
+    let i = 0; let 
+    j = 0; let 
+    totalarr = []; 
+    while(i<length1 && j <length2) 
+    { 
+        if (arr1[i]<=arr2[j]) 
+        { 
+            totalarr.push(arr1[i]) 
+            i++; 
+            
+        } else 
+        { totalarr.push(arr2[j]) 
+        j++; 
+            
+        }
+        } 
+        if (totallength%2===0) 
+        { 
+            return (totalarr[totalarr.length/2]+totalarr[totalarr.length/2 -1])/2; 
+            
+        } 
+    
+} 
+        let arr1 =[2,3,4]; 
+        let arr2 =[3,4,5];
+        console.log(x(arr1,arr2))
